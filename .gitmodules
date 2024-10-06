@@ -1,0 +1,18 @@
+[submodule "Desktop/PRUEVA/REPO-PRINCIPAL/REPO-FRONTEND"]
+	path = Desktop/PRUEVA/REPO-PRINCIPAL/REPO-FRONTEND
+	url = https://github.com/ReflexoPeru/REPO-FRONTEND
+[submodule "Desktop/PRUEVA/REPO-PRINCIPAL/REPO-BACKEND"]
+	path = Desktop/PRUEVA/REPO-PRINCIPAL/REPO-BACKEND
+	url = https://github.com/ReflexoPeru/REPO-BACKEND.git
+[submodule "Desktop/PRUEVA/frontend"]
+	path = Desktop/PRUEVA/frontend
+	url = https://github.com/ReflexoPeru/REPO-FRONT.git
+[submodule "Desktop/PRUEVA/backend"]
+	path = Desktop/PRUEVA/backend
+	url = https://github.com/ReflexoPeru/REPO-BACKEND.git
+[submodule "Desktop/PRUEVA/REPO-BACKEND"]
+	path = Desktop/PRUEVA/REPO-BACKEND
+	url = https://github.com/ReflexoPeru/REPO-BACKEND.git
+[submodule "Desktop/PRUEVA/REPO-FRONT"]
+	path = Desktop/PRUEVA/REPO-FRONT
+	url = https://github.com/ReflexoPeru/REPO-FRONT.git
