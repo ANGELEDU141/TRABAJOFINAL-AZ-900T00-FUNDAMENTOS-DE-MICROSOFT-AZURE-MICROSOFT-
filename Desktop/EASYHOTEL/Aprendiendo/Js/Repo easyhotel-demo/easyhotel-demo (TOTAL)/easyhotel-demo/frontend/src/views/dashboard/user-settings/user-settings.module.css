@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; 
+    font-family: 'Arial', sans-serif; 
+
+    .profileSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+
+        .icon {
+            width: 120px; 
+            height: 120px;
+            border-radius: 50%; 
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: #000000;
+            font-size: 20px; 
+            margin: 0;
+        }
+
+        .subtitle {
+            color: #000000;
+            font-size: 15px; 
+            margin: 0;
+        }
+    }
+
+    .settings {
+        display: flex;
+        gap: 20px;
+
+        .button {
+            background-color:  #FAB307; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+
+            &:hover {
+                background-color: #d4bc22; 
+            }
+        }
+    }
+}

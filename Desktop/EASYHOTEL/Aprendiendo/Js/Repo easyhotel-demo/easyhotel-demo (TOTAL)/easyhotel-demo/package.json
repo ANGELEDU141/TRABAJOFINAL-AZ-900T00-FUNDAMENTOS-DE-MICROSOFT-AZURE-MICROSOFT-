@@ -1,0 +1,42 @@
+{
+  "name": "easyhotel-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-start": "npm run build && npm run start",
+    "build": "npm run build-frontend && npm run build-backend",
+    "build-frontend": "npm run build -w frontend",
+    "build-backend": "npm run build -w backend",
+    "dev": "concurrently \"npm run dev-frontend\" \"npm run dev-backend\"",
+    "dev-frontend": "npm run dev -w frontend",
+    "dev-backend": "npm run dev -w backend",
+    "start": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "npm run preview -w frontend",
+    "backend": "npm run start -w backend",
+    "lint": "npm run lint-frontend && npm run lint-backend",
+    "lint-frontend": "eslint ./frontend --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint-backend": "",
+    "format": "npm run format-frontend && npm run format-backend",
+    "format-frontend": "prettier --write frontend/src",
+    "format-backend": "prettier --write backend/src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "prettier": "3.2.5"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "easyhotel-demo": "file:"
+  }
+}

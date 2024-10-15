@@ -1,0 +1,76 @@
+.registerEstablishment {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    color: #0E284E;
+    text-align: center;
+    margin-top: 50px;
+}
+
+& form {
+    background-color: #FFFFFF;
+    padding: 38px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 9px;
+    color: #333;
+    width: 120px;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="file"],
+.formGroup input[type="number"],
+.formGroup textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.formGroup input[type="file"] {
+    cursor: pointer;
+}
+
+.buttonGroup {
+    text-align: center;
+}
+
+.buttonGroup button[type="submit"] {
+    background-color: #FAB307;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonGroup button[type="submit"]:hover {
+    background-color: #E68A00;
+}

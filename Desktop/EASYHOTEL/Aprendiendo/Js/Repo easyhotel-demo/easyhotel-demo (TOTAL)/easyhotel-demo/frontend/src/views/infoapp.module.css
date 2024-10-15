@@ -1,0 +1,35 @@
+.contentInfo {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  padding: 30px;
+  font-family: sans-serif;
+
+  & h1 {
+    font-size: 4rem;
+    color: #fab307;
+    text-align: center;
+  }
+
+  & div {
+    display: flex;
+    flex-wrap: wrap;
+    border: thin solid #0e284e;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 400px;
+    gap: 10px;
+
+    & h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #0e284e;
+    }
+
+    & img {
+      max-width: 50px;
+    }
+  }
+}

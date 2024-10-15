@@ -1,0 +1,193 @@
+:root {
+  --Yellow: #fab307;
+  --Blue: #0e284e;
+  --White: #ffffff;
+  --Black: #000000;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--White);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--Blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--Black);
+}
+
+.element-with-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+/* Main container  */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Blue);
+  background-image: url(../../../assets/fondo-register.png);
+  background-size: auto 37%;
+  background-repeat: initial;
+  background-position: center;
+}
+
+/* Form container */
+.register-container {
+  width: 450px;
+  padding: 30px 40px 30px 40px;
+  border-radius: 8px;
+  margin: 20px;
+  background-color: var(--White);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--Black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* icon */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 16px 0px 6px 0px;
+  background-color: var(--White);
+  border: 5px solid var(--Yellow);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.image-container:hover {
+  background-color: var(--Blue);
+}
+
+.registration-image {
+  width: 50px;
+  height: auto;
+}
+
+/* form*/
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: var(--Blue);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 380px;
+  height: 35px;
+  padding: 12px;
+  border: 1px solid var(--Black);
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+/* buttons */
+button {
+  width: 100%;
+  height: 35px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--Yellow);
+  color: var(--White);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, var(--Yellow), #ff9f00);
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.toggle-password-button {
+  position: absolute;
+  width: 50px;
+  top: 60%;
+  right: 330px;
+  left: 330px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.toggle-password-button:hover {
+  background: none;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-focus .label-floating {
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: var(--Yellow);
+}
+
+.label-floating {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  transition:
+    transform 0.3s ease,
+    font-size 0.3s ease,
+    color 0.3s ease;
+  pointer-events: none;
+}
+
+/* Footer */
+.login-text {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--Blue);
+  font-size: 14px;
+}
+
+.login-link {
+  color: var(--Yellow);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
